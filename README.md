@@ -16,6 +16,8 @@ After your PLC is loaded, you can change settings in "General", but now we need 
 
 ![2](https://user-images.githubusercontent.com/118219943/219059633-939f0f0d-4736-410e-ab00-7e7c94a2d875.PNG)
 
+##Logic & LAD
+
 Now we need the PUMP_1 and PUMP_2 pumps to turn on when the tank mix level reaches the "minimum" level, up to the L_LEVEL sensor, working until the liquid level reaches the "maximum" level of the upstream H_LEVEL sensor
 MIXER mix for a short time, then the VALVE valve is opened and the mixture is drained, the level of mixture is lowered to the L_LEVEL sensor, VALVE closed and the cycle is repeated
 It is important that at any time it was possible to activate an immediate stop of the equipment, in our case it would be a STOP lamp, it would light up red in case of immediate stop and all the equipment would stop working
@@ -59,6 +61,8 @@ Below we describe what happens after the pumps are switched off.
 When the pumps are switched off, the mixing phase starts and lasts for 15 seconds in this case.
 In case of an emergency stop, add a Normal open contact "STOP" between the timer and the mixer, if this is done before the timer, in case of a stop the unit will run until the end of the timer.
 
+When you will drag/drop timer TIA Portal will ask you to create DataBase for timer, click yes we want theat.
+
 ![10](https://user-images.githubusercontent.com/118219943/219059734-5196352b-0e11-43e9-bba2-d7692e2eab8e.PNG)
 
 
@@ -86,11 +90,19 @@ We also need to prescribe the logic of the "STOP" button in Network_1 and Networ
 
 ![17](https://user-images.githubusercontent.com/118219943/219059780-572ecb66-61bc-48d9-87b4-6dd1dc201c18.PNG)
 
+After this we need to compile the project, so go to
+*"Compile ==> Hardware (rebuild all)"
+*"Compile ==> Software (rebuild all)"
 
+###Fill into our PLC and now we can test it #0969DA
+
+As you can see the logic works, when you press the STOP button (it goes into false state) and the installation stops completely.
 
 ![18](https://user-images.githubusercontent.com/118219943/219059786-1f3f4b45-231b-4e64-b214-74d3d0d5682f.PNG)
 
+##Result Images
 
+As you can see the logic works, when you press the **STOP** button (it goes into false state) and the installation stops completely.
 
 ![19](https://user-images.githubusercontent.com/118219943/219059789-db2838ce-d4d1-4510-8afc-7120d244406a.PNG)
 

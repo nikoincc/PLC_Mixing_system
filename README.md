@@ -5,23 +5,27 @@ Using this system as an example, let's look at programming a Siemens PLC
 A schematic diagram of the 2 component mixing system is given
 There are two liquid level sensors, mixer, a light signal indicating that the facility is off and two pumps, discharge valve
 
+Open the TIA Portal and first we need to choose our PLC, so select the "1215C DC/DC/Rly" controller, this PLC is enough for our task
+
+After your PLC is loaded, you can change settings in "General", but now we need only "Pulse Generators(PTO/PWM) ==> StartUp", and choose "Warm restart - RUN". Theat means after we turnON it will automaticly run our PLC
+
+
 ![1](https://user-images.githubusercontent.com/118219943/219059597-f8127726-2d9b-4caf-9bf7-943d2c58ae30.PNG)
 
 
 
 ![2](https://user-images.githubusercontent.com/118219943/219059633-939f0f0d-4736-410e-ab00-7e7c94a2d875.PNG)
 
-We need the PUMP_1 and PUMP_2 pumps to turn on when the tank mix level reaches the "minimum" level, up to the L_LEVEL sensor, working until the liquid level reaches the "maximum" level of the upstream H_LEVEL sensor
+NOW we need the PUMP_1 and PUMP_2 pumps to turn on when the tank mix level reaches the "minimum" level, up to the L_LEVEL sensor, working until the liquid level reaches the "maximum" level of the upstream H_LEVEL sensor
 MIXER mix for a short time, then the VALVE valve is opened and the mixture is drained, the level of mixture is lowered to the L_LEVEL sensor, VALVE closed and the cycle is repeated
 It is important that at any time it was possible to activate an immediate stop of the equipment, in our case it would be a STOP lamp, it would light up red in case of immediate stop and all the equipment would stop working
 
 The challenge is now to implement 
 
-Open the TIA Portal and select the controller, it has ....., this is enough for our task
+Lets assign names, addresses and data types to our components
 
-Then assign names, addresses and data types to our components
-As input devices in this setup we will have L_LEVEL, H_LEVEL, STOP light
-Outputs PUMP_1, PUMP_2, MIXER
+As Input ==> devices in this setup we will have L_LEVEL, H_LEVEL, STOP light
+Outputs ==> PUMP_1, PUMP_2, MIXER
 
 ![3](https://user-images.githubusercontent.com/118219943/219059650-ed00d976-114b-4fb3-abed-53ed303fdb51.PNG)
 
@@ -33,11 +37,11 @@ Outputs PUMP_1, PUMP_2, MIXER
 
 ![5](https://user-images.githubusercontent.com/118219943/219059666-eb0b6b32-5c78-43fe-b76c-581ea94ede9a.PNG)
 
-
-
+In Outputs we need to change adress of Outputs from %I0.0 to %Q0.0, %I0.1 to %Q0.1 and so on...
+ 
 ![6](https://user-images.githubusercontent.com/118219943/219059685-fd1d8866-4ff4-4622-87d8-8e7d6a156725.PNG)
 
-
+After our Adreese, Names, DataTypes is set now we can make some LAD codeing
 
 ![7](https://user-images.githubusercontent.com/118219943/219059707-f646bc0b-c28d-4af2-870c-fdaf68a27151.PNG)
 

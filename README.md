@@ -55,23 +55,22 @@ When the liquid level reaches L_LEVEL the two pumps PUMP_1 and PUMP_2 will start
 
 ![9](https://user-images.githubusercontent.com/118219943/219099450-606395d6-a267-4a7c-af25-ea16460801aa.PNG)
 
-
-
-![10](https://user-images.githubusercontent.com/118219943/219059734-5196352b-0e11-43e9-bba2-d7692e2eab8e.PNG)
-
 Below we describe what happens after the pumps are switched off.
 When the pumps are switched off, the mixing phase starts and lasts for 15 seconds in this case.
 In case of an emergency stop, add a Normal open contact "STOP" between the timer and the mixer, if this is done before the timer, in case of a stop the unit will run until the end of the timer.
 
+![10](https://user-images.githubusercontent.com/118219943/219059734-5196352b-0e11-43e9-bba2-d7692e2eab8e.PNG)
+
+
 ![11](https://user-images.githubusercontent.com/118219943/219059744-f6328058-6d6f-4791-bc5f-b4f28a5ba1c5.PNG)
-
-
-
-![13](https://user-images.githubusercontent.com/118219943/219059747-62c32c30-ffa1-4fa9-a01a-8232c24ace36.PNG)
 
 In the next phase we need to discharge the mixture and when the liquid level of the mixture reaches the lower sensor L_LEVEL the valve will shut off the discharge of the mixture
 
 We also need to prescribe the logic of the "STOP" button in Network_1 and Network_3
+
+![13](https://user-images.githubusercontent.com/118219943/219059747-62c32c30-ffa1-4fa9-a01a-8232c24ace36.PNG)
+
+
 
 ![14](https://user-images.githubusercontent.com/118219943/219059752-7717bd86-3324-4e6a-905b-249885729522.PNG)
 

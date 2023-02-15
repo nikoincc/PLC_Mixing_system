@@ -44,7 +44,10 @@ Outputs ==> **PUMP_1, PUMP_2, MIXER**
 
 ![7](https://user-images.githubusercontent.com/118219943/219099424-820e3dfe-8596-4064-b67c-553c6b229528.PNG)
 
+First we add the SR logical operator Set/Reset, here SR will perform the basic logic, namely when the "S" input receives a logical 1 on the output we get also a 1, if the "S" and "R1" inputs receive 1, then the output is 0, if it receives 0 and 1, then the output is also 0
 
+Then let's set and normally open contacts, sign them according to the logic
+When the liquid level reaches L_LEVEL the two pumps PUMP_1 and PUMP_2 will start, when the liquid level reaches H_LEVEL the pumps will stop
 
 ![8](https://user-images.githubusercontent.com/118219943/219099442-eaa98111-8c71-46d4-a06c-cf58c1ff15ba.PNG)
 
@@ -56,7 +59,9 @@ Outputs ==> **PUMP_1, PUMP_2, MIXER**
 
 ![10](https://user-images.githubusercontent.com/118219943/219059734-5196352b-0e11-43e9-bba2-d7692e2eab8e.PNG)
 
-
+Below we describe what happens after the pumps are switched off.
+When the pumps are switched off, the mixing phase starts and lasts for 15 seconds in this case.
+In case of an emergency stop, add a Normal open contact "STOP" between the timer and the mixer, if this is done before the timer, in case of a stop the unit will run until the end of the timer.
 
 ![11](https://user-images.githubusercontent.com/118219943/219059744-f6328058-6d6f-4791-bc5f-b4f28a5ba1c5.PNG)
 
@@ -64,7 +69,9 @@ Outputs ==> **PUMP_1, PUMP_2, MIXER**
 
 ![13](https://user-images.githubusercontent.com/118219943/219059747-62c32c30-ffa1-4fa9-a01a-8232c24ace36.PNG)
 
+In the next phase we need to discharge the mixture and when the liquid level of the mixture reaches the lower sensor L_LEVEL the valve will shut off the discharge of the mixture
 
+We also need to prescribe the logic of the "STOP" button in Network_1 and Network_3
 
 ![14](https://user-images.githubusercontent.com/118219943/219059752-7717bd86-3324-4e6a-905b-249885729522.PNG)
 

@@ -1,6 +1,7 @@
 # PLC_Mixing_system!
- - Logic & LAD[^1]
- - Result Images[^2]
+ - Logic & LAD
+ - Result Images
+
 Using this system as an example, let's look at programming a Siemens PLC
 
 A schematic diagram of the 2 component mixing system is given
@@ -17,7 +18,7 @@ After your PLC is loaded, you can change settings in "General", but now we need 
 
 ![2](https://user-images.githubusercontent.com/118219943/219059633-939f0f0d-4736-410e-ab00-7e7c94a2d875.PNG)
 
-[^1]: ## Logic & LAD
+## Logic & LAD
 
 Now we need the PUMP_1 and PUMP_2 pumps to turn on when the tank mix level reaches the "minimum" level, up to the L_LEVEL sensor, working until the liquid level reaches the "maximum" level of the upstream H_LEVEL sensor
 MIXER mix for a short time, then the VALVE valve is opened and the mixture is drained, the level of mixture is lowered to the L_LEVEL sensor, VALVE closed and the cycle is repeated
@@ -101,7 +102,7 @@ As you can see the logic works, when you press the STOP button (it goes into fal
 
 ![18](https://user-images.githubusercontent.com/118219943/219059786-1f3f4b45-231b-4e64-b214-74d3d0d5682f.PNG)
 
-[^2]: ## Result Images
+## Result Images
 
 As you can see the logic works, when you press the **STOP** button (it goes into false state) and the installation stops completely.
 

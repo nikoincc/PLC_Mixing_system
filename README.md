@@ -35,11 +35,11 @@ Outputs ==> **PUMP_1, PUMP_2, MIXER**
 
 ![5](https://user-images.githubusercontent.com/118219943/219059666-eb0b6b32-5c78-43fe-b76c-581ea94ede9a.PNG)
 
-## In Outputs we need to change adress of Outputs from %I0.0 to %Q0.0, %I0.1 to %Q0.1 and so on...
+### In Outputs we need to change adress of Outputs from %I0.0 to %Q0.0, %I0.1 to %Q0.1 and so on...
  
 ![6](https://user-images.githubusercontent.com/118219943/219059685-fd1d8866-4ff4-4622-87d8-8e7d6a156725.PNG)
 
-## After our Adreese, Names, DataTypes is set now we can make some LAD codeing
+### After our Adreese, Names, DataTypes is set now we can make some LAD codeing
 
 ![7](https://user-images.githubusercontent.com/118219943/219059707-f646bc0b-c28d-4af2-870c-fdaf68a27151.PNG)
 

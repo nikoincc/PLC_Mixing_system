@@ -41,15 +41,16 @@ Outputs ==> **PUMP_1, PUMP_2, MIXER**
 
 ### After our Adreese, Names, DataTypes is set now we can make some LAD codeing
 
-![7](https://user-images.githubusercontent.com/118219943/219059707-f646bc0b-c28d-4af2-870c-fdaf68a27151.PNG)
+
+![7](https://user-images.githubusercontent.com/118219943/219099424-820e3dfe-8596-4064-b67c-553c6b229528.PNG)
 
 
 
-![8](https://user-images.githubusercontent.com/118219943/219059724-90ce3bc8-866f-4b17-9eb9-d67ef57268a8.PNG)
+![8](https://user-images.githubusercontent.com/118219943/219099442-eaa98111-8c71-46d4-a06c-cf58c1ff15ba.PNG)
 
 
 
-![9](https://user-images.githubusercontent.com/118219943/219059730-c23da653-6206-4b63-91f2-864be9392f54.PNG)
+![9](https://user-images.githubusercontent.com/118219943/219099450-606395d6-a267-4a7c-af25-ea16460801aa.PNG)
 
 
 

@@ -12,6 +12,12 @@ Open the TIA Portal and first we need to choose our PLC, so select the "1215C DC
 After your PLC is loaded, you can change settings in "General", but now we need only "**Pulse Generators(PTO/PWM) ==> StartUp**", and choose "**Warm restart - RUN**". Theat means after we turnON it will automaticly run our PLC
 
 
+### For better understanding look on image below
+
+<img width="754" alt="Снимок экрана 2023-02-14 в 17 06 38" src="https://user-images.githubusercontent.com/118219943/219115714-d91631f5-5aba-42ba-8c86-2eff02bcd5f3.png">
+
+
+
 ![1](https://user-images.githubusercontent.com/118219943/219059597-f8127726-2d9b-4caf-9bf7-943d2c58ae30.PNG)
 
 
